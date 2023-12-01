@@ -31,7 +31,7 @@ nav{
 }
 
 .logo{
-    width: 234px; /*Width of the logo*/
+    width: 214px; /*Width of the logo*/
 }
 
 nav ul li{ /*Adds styles to the list items inside ul inside nav*/     
@@ -43,7 +43,7 @@ nav ul li{ /*Adds styles to the list items inside ul inside nav*/
 nav ul li a{
     color: #fff; /*Text color to white for the links*/
     text-decoration: none; /*Removes the underline and other defaults styles from the links*/
-    font-size: 18px; /*Text size to 18px*/
+    font-size: 22px; /*Text size to 18px*/
     position: relative; /*Position of the links*/
 }
 
@@ -60,4 +60,25 @@ nav ul li a::after{ /* pseudo-element -> after, they allow you to style certain 
 
 nav ul li a:hover::after{
     width: 100%; /*Width of the link*/
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text p{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.header-text h1 span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4285F4;
 }
