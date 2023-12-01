@@ -13,7 +13,8 @@ body{
 #header{
     width: 100%; /* 100% of Screen*/
     height: 100vh; /* 100% of viewport height(Vh)*/
-    background-image: url(images/background.png);
+    background-image: url(../images/background.png);
+    background-blend-mode: darken;
     background-size: cover; /* Image size covers the container */
     background-position: center; /* Image is centered both horizontally and vertically in the container */
 }
@@ -30,7 +31,7 @@ nav{
 }
 
 .logo{
-    width: 140px; /*Width of the logo*/
+    width: 234px; /*Width of the logo*/
 }
 
 nav ul li{ /*Adds styles to the list items inside ul inside nav*/     
@@ -48,13 +49,13 @@ nav ul li a{
 
 nav ul li a::after{ /* pseudo-element -> after, they allow you to style certain parts of an element without adding additional HTML markup */
     content: ''; /*Used to generate content for Psudo-element since it is mandatory it is kept Empty here*/
-    background: #ff004f; /*Bg Color of the Psudo-element*/
+    background: #4285F4; /*Bg Color of the Psudo-element*/
     width: 0; /*Width of the Psudo-element is made zero initially to hide it(Before hover) */
-    height: 3px; /*Height(Thickness) of the Psudo-element (Thin #ff004f line)*/
+    height: 3px; /*Height(Thickness) of the Psudo-element (Thin Blue line)*/
     position: absolute; /*Position of the psuedo-element is absolutely within its containing element.*/
     left: 0; /*Positions the pseudo-element at the left edge of its containing element (a in this case).*/
-    bottom: -6px; /*Position of the psuedo-element*/
-    transition: 0.3s; /*Transition of the psuedo-element*/
+    bottom: -6px; /*Position of the psuedo-element from bottom edge of its containing element*/
+    transition: 0.3s; /*Transition time of the psuedo-element*/
 }
 
 nav ul li a:hover::after{
